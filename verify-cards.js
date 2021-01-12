@@ -32,7 +32,7 @@ function validateCard(card){
 function findInvalidCards(cards){
     const invalidCards = [];
     for(let i = 0; i <= cards.length -1; i++){
-        if( validateCard(cards[i]) === false){
+        if(!validateCard(cards[i])){
             invalidCards.push(cards[i]);
         }
     }
