@@ -26,7 +26,7 @@ function validateCard(card){
         : sum += card[i];
     }
 
-    return sum % 10 === 0 ? true : false;
+    return sum % 10 === 0;
 }
 
 function findInvalidCards(cards){
